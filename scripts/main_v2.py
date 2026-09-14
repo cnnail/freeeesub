@@ -61,6 +61,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/security/tls",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/freefq/free/master/v2",
+    "https://fn.loda.indevs.in/sub?token=fc37d65856042321741961835802ed64",
+    "https://cm.sela.de5.net/sub?token=fd4d439bf745d8e4313cb7e13d7ca683",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
 ]
