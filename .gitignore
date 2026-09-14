@@ -6,3 +6,5 @@ runtime/
 .test/
 .sb-probe/
 output/e2e_test_report.json
+._*
+output/*
