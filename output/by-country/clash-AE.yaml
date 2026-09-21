@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: c0c5a312-f9d3-4eb4-ad6a-0aa2738ac7ab
+  uuid: 97912cdc-d523-4121-a0d6-52285f8a6898
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -40,7 +40,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: safari
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: 85.204.107.177
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
@@ -48,7 +48,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
