@@ -5,27 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
-  server: 188.114.98.16
-  port: 2082
-  udp: true
-  type: vless
-  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: index.harmonica02.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: f3b97a20-f820-4966-bc70-6bd57cdc95f2
+  uuid: c4783cc5-aeec-4473-855b-1c98965949dd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  server: 151.242.161.139
+  port: 443
+  udp: true
+  type: vless
+  uuid: 24e3a924-fc4b-4e3f-98a8-85d506d530f9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8H-YQe-nSd_aL2FwWIFNV2-anUb4v3cY_n5QcEEjGEs
+    short-id: eeed325908a87d9f
+  servername: gr2.serverslocal.ru
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
   server: 130.49.161.70
@@ -49,9 +51,9 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: 85.204.107.178
+  server: 85.204.107.172
   port: 8080
   udp: true
   type: hysteria2
@@ -59,7 +61,7 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
