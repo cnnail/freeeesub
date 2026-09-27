@@ -6,51 +6,34 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "188.114.97.6",
-      "server_port": 8080,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "185.87.24.169",
+      "server_port": 2085,
+      "uuid": "6f91e9a0-d5de-4bd2-a692-8aa94d024ad7",
       "transport": {
-        "type": "ws",
-        "path": "/j100sy9wn073cxbvir",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "104.21.70.21",
-      "server_port": 443,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
-      "tls": {
-        "enabled": true,
-        "server_name": "index.harmonica01.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "185.87.24.174",
+      "server_port": 2085,
+      "uuid": "6f91e9a0-d5de-4bd2-a692-8aa94d024ad7",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "index.harmonica01.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
-      "server": "188.114.98.16",
-      "server_port": 2082,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "93.190.8.85",
+      "server_port": 3090,
+      "uuid": "6f91e9a0-d5de-4bd2-a692-8aa94d024ad7",
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
@@ -65,7 +48,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -95,6 +78,17 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaohe",
+      "server": "93.190.9.55",
+      "server_port": 3090,
+      "uuid": "e50550c5-6920-4e17-b4de-645d23bcde29",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -103,7 +97,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
       ]
     },
     {
@@ -114,7 +109,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 03 - xiaohe",
         "🇹🇷 土耳其 (Turkey) 04 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
