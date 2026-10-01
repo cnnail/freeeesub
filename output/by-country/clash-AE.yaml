@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaohe
+  server: 104.143.223.230
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 8dafd22b-72fc-4d78-ae00-33affecb8fcd
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
   server: 78.40.195.140
   port: 443
   udp: true
@@ -16,35 +25,47 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaohe
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
+  server: 217.60.33.215
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
+  server: 31.59.150.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
+  servername: google.com
+  client-fingerprint: qq
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaohe
-  server: 85.204.107.174
-  port: 8080
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
+  server: go.wwwinternetvideo.click
+  port: 443
   udp: true
   type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaohe
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16258
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaohe
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -54,20 +75,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaohe
-  server: 78.17.161.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: e0bc75
-  servername: ozone.nl
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaohe
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
   server: 146.70.102.82
   port: 443
   udp: true
@@ -79,20 +87,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaohe
-  server: 139.185.44.42
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b0fa80ad-d759-4bcc-a0fd-f802d53b5a88
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: VlWMFvYxwGIsctI7BfOgC4PCG3EMToD7_H8vWcRB42w
-    short-id: 855834d3b002ad21
-  servername: www.microsoft.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
